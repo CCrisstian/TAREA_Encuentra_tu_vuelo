@@ -1,5 +1,3 @@
-import javax.swing.*;
-import javax.swing.text.html.parser.Parser;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -35,7 +33,7 @@ public class Main {
         System.out.println(lista_Vuelos.getLast());
 
         System.out.println("\n-------Vuelo con MENOR número de pasajeros-------------");
-        lista_Vuelos.sort((a, b) -> a.getCantidad_pasajeros().compareTo(b.getCantidad_pasajeros()));
+        lista_Vuelos.sort(Comparator.comparing(Vuelo::getCantidad_pasajeros));
         System.out.println(lista_Vuelos.getFirst());
 
 

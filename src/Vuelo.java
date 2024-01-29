@@ -78,7 +78,7 @@ public class Vuelo implements Comparable<Vuelo>{
         sb.append("--o--o--(_)--o--o--");
         sb.append("\n");
 
-        return  sb.toString()+
+        return  sb+
                 "\n"+
                 "Nombre: " + nombre + '\n' +
                 "Origen: " + origen + '\n' +
